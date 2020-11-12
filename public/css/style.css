@@ -1,6 +1,15 @@
 .logo-mercado-liebre{
+    
+    float: left;
+    size: 25px;
+    margin: -2px;
+}
+.contenedor-logo{
+    padding: 25%;
     background-color: yellow;
 }
+
+
 .fuente{
     font-family: Roboto, sans-serif;
 }
