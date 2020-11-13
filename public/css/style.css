@@ -2,7 +2,11 @@
     font-family: Roboto, sans-serif;
 }
 .color-fondo{
+    font-size: 22px;
+    font-weight: 500;
     background-color: yellow;
+    width: 1250px;
+    height: 700px;
 }
 .footer{
     font-size: 10px;
