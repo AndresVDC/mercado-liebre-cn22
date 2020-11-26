@@ -9,149 +9,139 @@
 <body class="fuente">
     <main>
         <header>
-                <img class="logo" src="/images/logo-mercado-liebre.svg">  
-                <p>Buscar productos, marcas y mas.</p>
-                <input type="text" />
-                <p>Compra en cuotas y sin tarjeta de creditos</p>
-        <section class="navegacion">
-                <ul>
-                <li><a href="/ofertas">Ofertas</a></li>
-                <li><a href="/tiendas-oficiales">Tiendas oficiales</a></li>
-                <li><a href="/vender">Vender</a></li>
-                <li><a href="/Ayuda">Ayuda</a></li>
-                </ul>
-                <ul>
-                <li><a href="/crea-tu-cuenta">Creá tu cuenta</a></li>
-                <li><a href="/ingresa">Ingresá</a></li>
-                <li><a href="mis-compras">Mis compras</a></li>
-                </ul>
-        </section>
-                <div>
-                    <i class="fas fa-bars"></i>
-                </div>
-        </header>
-        <main>
+            <div class="container">
+                    <img class="logo" src="/images/logo-mercado-liebre.svg">  
+                    <div>  
+                    <input class="busqueda" type="text" placeholder="Buscar productos, marcas." />
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="title1">
+                            <h2>Compra en cuotas y sin tarjeta de credito</h2>
+                    </div> 
+                    <div class="blue-btn">
+                            <i class="fas fa-bars"></i>
+                    </div>
+            </div>
+            <section class="navegacion">    
+            <ul >
+                    <li><a href="/ofertas">Ofertas</a></li>
+                    <li><a href="/tiendas-oficiales">Tiendas oficiales</a></li>
+                    <li><a href="/vender">Vender</a></li>
+                    <li><a href="/Ayuda">Ayuda</a></li>
+            </ul>
+            <ul>
+                    <li><a href="/crea-tu-cuenta">Creá tu cuenta</a></li>
+                    <li><a href="/ingresa">Ingresá</a></li>
+                    <li><a href="mis-compras">Mis compras</a></li>
+            </ul>
+            </section>
+            </header>
         <form>
             <div>
                 <label for="nombre">Nombre y Apellido</label>
             </div>
-            <br>
-            <div>
-                <input type="text" id="nombre" name="nombre">
+            <div class="input-container">
+                <input class="input-text" type="text" id="nombre" name="nombre">
             </div>
-            <br>
             <div>
                 <label for="usuario">Usuario</label>
             </div>
-            <br>
-            <div>
-                <input type="text" id="usuario" name="usuario">
+            <div class="input-container">
+                <input class="input-text" type="text" id="usuario" name="usuario">
             </div>
-            <br>
             <div>
                 <label for="email">Email</label>
             </div>
-            <br>
-            <div>
-                <input type="email" id="email" name="email">
+            <div class="input-container">
+                <input class="input-text" type="email" id="email" name="email">
             </div>
-            <br>
             <div>
                 <label for="date">Fecha de nacimiento</label>
             </div>
-            <br>
-            <div>
-                <input type="date" id="date" name="date">
+            <div class="input-container">
+                <input class="input-text" type="date" id="date" name="date">
             </div>
-            <br>
             <div>
-                <label for="domicilio">Domicilio</label>
+                <label>Domicilio</label>
             </div>
-            <br>
-            <div>
-                <input type="text" id="domicilio" name="domicilio">
+            <div class="input-container">
+                <input class="input-text" type="text" id="domicilio" name="domicilio">
             </div>
-            <br>
             <div>
-                <label for="perfil">Perfil de usuario</label>
+                <label>Perfil de usuario</label>
             </div>
-            <br>
-            <div>
+            <div class="container-profile">
+                <div class="profile">
                 <input type="radio" name="perfil" value="comprador">Comprador
+                </div>
+                <div class="profile">
                 <input type="radio" name="perfil" value="Vendedor">Vendedor
+                </div>
             </div>
-            <br>
             <div>
-                <label for="">Interes</label>
+                <label for="interest">Interes</label>
             </div>
-            <br>
-            <div>
+            <div class="container-interest">
+                <div class="interest">
                 <input type="checkbox" name="Interes" value="electro">Electro  
+                </div>
+                <div class="interest">
                 <input type="checkbox" name="Interes" value="moda"> Moda 
+                </div>
+                <div class="interest">
                 <input type="checkbox" name="Interes" value="hogar"> hogar  
+                </div>
+                <div class="interest">
                 <input type="checkbox" name="Interes" value="jugueteria">Jugueteria
+                </div>
+                <div class="interest">
                 <input type="checkbox" name="Interes" value="vida sana"> Vida sana 
+                </div>
             </div>
-            <br>
             <div>
                 <label for="">Elegí tu foto de usuario</label>
             </div>
-            <br>
-            <div>
-                <input type="file" name="foto" value="" accept="image/jpg,image/png">
+            <div> 
+                <input class="input-text" class="" type="file" name="foto" value="" accept="image/jpg,image/png">
             </div>
-            <br>
-            <div>
-                <input type="password" placeholder="Ingresá tu contraseña">
+            <div class="input-container">
+                <input class="input-text" type="password" placeholder="Ingresá tu contraseña">
             </div>
-            <br>
-            <div>
-                <input type="password" placeholder="Confirma tu contraseña">
+            <div class="input-container">
+                <input class="input-text" type="password" placeholder="Confirma tu contraseña">
             </div>
-            <br>
-            <div>
+            <div class="input-container"> 
                 <button class="boton1" type="submit">Enviar</button>   
+            </div>
+            <div class="input-container">
                 <button class="boton2" type="reset">Borrar</button>
             </div>   
-
         </form>
         </main>  
-    <footer class="footer">
-        <article>
-                <img src="/images/img-cafetera-moulinex.jpg" alt="">
-                <p>$6.770</p>
-                <p>40% OFF</p>
-                <p>Cafetera Moulinex Dolce Gusto</p>
-        </article>
-        <article>
-                <img src="/images/img-macbook-pro-2019.jpg" alt="">
-                <p>$230.000</p>
-                <p>20% OFF</p>
-                <p>Macbook pro 2019</p>
-        </article> 
-        <article>       
-                <img src="/images/img-samsung-galaxy-s10.jpg" alt="">
-                <p>$70.500</p>
-                <p>15% OFF</p>
-                <p>SmartTV Samsung 43"</p>
-        </article>
-        <br>
-        <div class="pie">
-            <strong>Pagá con tarjeta o en efectivo</strong>
-            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
-    pago. ¡Y siempre es seguro!</p>
-        
-            <strong>Envío gratis desde los $ 2.500</strong>
-    
-            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
-    productos. Es un beneficio de MercadoPuntos.</p>
-    
-            <strong>Seguridad, de principio a fin</strong>
-    
-            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
-    porque estás siempre protegid@.</p>   
-            <p>© 1999-2019 MercadoLiebre S.R.L.</p>
-        </div>
+        <footer class="footer">
+            <div class="pie">
+                    <hr>
+                    <div><i class="fas fa-credit-card"></i></div>
+                    <strong>Pagá con tarjeta o en efectivo</strong>
+                    <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
+                     pago. ¡Y siempre es seguro!</p>
+                    <hr>        
+                    <div>
+                    <i class="fas fa-gift"></i>
+                    </div>
+                    <strong>Envío gratis desde los $ 2.500</strong>
+                    <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de MercadoPuntos.</p>
+                    <hr>
+                    <div>
+                    <i class="fas fa-lock"></i>
+                    </div>
+                    <strong>Seguridad, de principio a fin</strong>
+                    <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
+                    porque estás siempre protegid@.</p>                 
+                    <hr>
+                    <p>© 1999-2019 MercadoLiebre S.R.L.</p>
+            </div>
     </footer>
     </main> 
 </body>
