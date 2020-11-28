@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado liebre</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -10,18 +11,21 @@
     <main>
         <header>
             <div class="container">
-                    <img class="logo" src="/images/logo-mercado-liebre.svg">  
-                    <div>  
-                    <input class="busqueda" type="text" placeholder="Buscar productos, marcas." />
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
-                    <div class="title1">
+                <div>
+                        <img class="logo" src="/images/logo-mercado-liebre.svg">
+                        <div class="search-container">
+                            <input class="search" type="text" placeholder="Buscar productos, marcas." />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div class="title1">
+                            <i class="fas fa-hand-holding-usd"></i>
                             <h2>Compra en cuotas y sin tarjeta de credito</h2>
-                    </div> 
-                    <div class="blue-btn">
+                        </div>
+                        <div class="blue-btn">
                             <i class="fas fa-bars"></i>
-                    </div>
-            </div>
+                        </div>
+                </div>
+        </div>
             <section class="navegacion">    
             <ul >
                     <li><a href="/ofertas">Ofertas</a></li>
@@ -82,27 +86,27 @@
                 <label for="interest">Interes</label>
             </div>
             <div class="container-interest">
-                <div class="interest">
+                <div>
                 <input type="checkbox" name="Interes" value="electro">Electro  
                 </div>
-                <div class="interest">
+                <div>
                 <input type="checkbox" name="Interes" value="moda"> Moda 
                 </div>
-                <div class="interest">
+                <div>
                 <input type="checkbox" name="Interes" value="hogar"> hogar  
                 </div>
-                <div class="interest">
+                <div>
                 <input type="checkbox" name="Interes" value="jugueteria">Jugueteria
                 </div>
-                <div class="interest">
+                <div>
                 <input type="checkbox" name="Interes" value="vida sana"> Vida sana 
                 </div>
             </div>
             <div>
-                <label for="">Elegí tu foto de usuario</label>
+                <label for="Elige tu foto">Elegí tu foto de usuario</label>
             </div>
-            <div> 
-                <input class="input-text" class="" type="file" name="foto" value="" accept="image/jpg,image/png">
+            <div class="input-container"> 
+                <input class="input-text" type="file" name="foto" value="" accept="image/jpg,image/png">
             </div>
             <div class="input-container">
                 <input class="input-text" type="password" placeholder="Ingresá tu contraseña">
@@ -118,12 +122,12 @@
             </div>   
         </form>
         </main>  
-        <footer class="footer">
+    <footer class="footer">
             <div class="pie">
                     <hr>
                     <div><i class="fas fa-credit-card"></i></div>
                     <strong>Pagá con tarjeta o en efectivo</strong>
-                    <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
+                    <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de
                      pago. ¡Y siempre es seguro!</p>
                     <hr>        
                     <div>
