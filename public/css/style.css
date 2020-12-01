@@ -15,31 +15,41 @@ main{
     flex-direction: column;
     background-color:#FFE600;
 }
-.logo{
-    width: 40%;
-}
-.search-container{
-    width: 100%;
+.container-logo-search{
     display: flex;
     flex-direction: row;
+    padding: 30px;
+}
+.logo{
+    width: 50%;
+}
+.search-container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: white;
+    border: none;
 }
 .search{
-    width: 100%;
-    height: 5vh;
-    font-size: 15px;
+    width: 90%;
+    font-size: 12px;
+    border: none;
+    align-self: center;
 }
 .fa-search{
     width: 10%;
-    font-size: 25px;
+    font-size: 10px;
+    align-self: center;
 }
-.title1{
+.title{
     display: flex;
     flex-direction: row;
-    font-size: 10px;
+    justify-content: center;
+    font-size: 8px;
     width: 100%;
 }
 .fa-hand-holding-usd{
-    font-size: 15px;
+    font-size: 10px;
 }
 .navegacion{
     display: none;
@@ -55,7 +65,7 @@ ul{
 .blue-btn{
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 25px;
 }
 .fa-bars{
     color: white;
@@ -131,6 +141,10 @@ h3{
     flex-direction: column;
     background-color: white;
     margin: 10px;
+    
+}
+.offers:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .offers img{
     width: 100%;
@@ -161,27 +175,39 @@ h3{
     color: green;
     font-size: 15px;
 }
+.offers:hover .fa-truck{
+    transition: 1000ms;
+    transform: rotate(360deg);
+}
 .description{
     margin: 20px;
     margin-left: 10px;
     font-size: 15px;
+    display: none;
+}
+.offers:hover .description{
+    display: flex;
 }
 .footer{
     background-color: white;
     padding-left: 20px;
-    padding-right: 20px;    
+    padding-right: 20px;
+    text-align: center;    
 }
 .fa-credit-card{
     color: blue;
-    width: 20px;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 .fa-gift{
     color: blue;
-    width: 20px;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 .fa-lock{
     color: blue;
-    width: 20px;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 .pie{
     background-color: white;
@@ -209,48 +235,49 @@ hr{
     font-size: 10px;
     margin: 25px;
 }
-@media(min-width:600px){
-*{
-    box-sizing: border-box;
-    margin: 0px;
-}
-.font{
-    font-family: Roboto, sans-serif;
-}
-main{
-    background-color: rgb(231, 226, 226);
-    width: 100%;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    background-color: #FFE600;
-}
-.logo{
-    width: 40%;
-}
-.search-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    
-}
-.search{
-    width: 100%;
-    height: 6vh;
-    font-size: 18px;
-}
-.fa-search{
-    width: 10%;
-    font-size: 30px;
-}
-.title1{
-    font-size: 10px;
-    width: 100%;
-}
+@media(min-width:361px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color:#FFE600;
+    }
+    .container-logo-search{
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+    }
+    .logo{
+        width: 50%;
+    }
+    .search-container{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        background-color: white;
+        border: none;
+    }
+    .search{
+        width: 90%;
+        font-size: 12px;
+        border: none;
+        align-self: center;
+    }
+    .fa-search{
+        width: 10%;
+        font-size: 10px;
+        align-self: center;
+    }
+.title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 8px;
+        width: 100%;
+    }
 .fa-hand-holding-usd{
-    font-size: 15px;
+        font-size: 10px;
 }
+
 .navegacion{
     display: none;
     }
@@ -274,70 +301,128 @@ ul{
     background-color:#0022AA ;
     cursor: pointer;
     }
-label{
-    margin-left: 15px;
-    font-size: 12px;
-}
-.input-container{
-    display: flex;
-    justify-content: center;
-}
-.input-text{
-    width:90%;
-    border-radius:5px;
-    border: solid 1px lightgrey;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-.boton1{
-    color: white;
-    background-color: #0044AA;
-    width: 90%;
-    height: 5vh;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.boton1:hover{
-    background-color: #0022AA;
-    cursor: pointer;
-}
-.boton2{
-    color: white;
-    background-color: #AA0044;
-    width: 90%;
-    height:5vh;
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
-    margin-bottom:30px;
-}
-.boton2:hover{
-    background-color: #CC1155;
-    cursor: pointer;
-}
-.banner{
-    display: block;
-    width: 100%;
-}
-h3{
-    text-align: center;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
+
+
 .offers-container{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .offers{
     display: flex;
     background-color: white;
-    width: 33%;
     margin: 5px;
+    width: 47%;
+}
+
+.real-price{
+    width: 30%;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.off{
+    width: 70%;
+    font-size: 10px;
+    color: green;
+    opacity: 0.5;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.fa-truck{
+    position: relative;
+    bottom:6px;
+    right: 20px;
+    color: green;
+    font-size: 10px;
+}
+.description{
+    margin: 20px;
+    margin-left: 10px;
+    font-size: 10px;
+}
+}
+@media (min-width:769px){
+    
+    .container-logo-search-tittle{
+        display: flex;
+    }
+    .container-logo-search{
+        width: 90%;
+    }
+    .logo{
+        width: 40%;
+    }
+    .search-container{
+        background-color: white;
+        width: 100%;
+    }
+    .search{
+        width: 90%;
+        font-size: 20px;
+        border: none;
+        align-self: center;
+        background-color: white;
+        border: none;
+    }
+    .fa-search{
+        width: 10%;
+        font-size: 20px;
+        align-self: center;
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 7px;
+        width: 30%;
+        align-self: center;
+    }
+.fa-hand-holding-usd{
+        font-size: 10px;
+}
+.blue-btn{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    display: none;
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFE600;
+    padding: 10PX;
+}
+
+.ul1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+.ul2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+li{
+    font-size: 1em;
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10%;
+}
+.offers-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.offers{
+    display: flex;
+    background-color: white;
+    margin: 5px;
+    width: 23%;
 }
 .offers img{
     height: 45vh;
@@ -360,7 +445,7 @@ h3{
     color: green;
     opacity: 0.5;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .fa-truck{
     position: relative;
@@ -373,48 +458,5 @@ h3{
     margin: 20px;
     margin-left: 10px;
     font-size: 10px;
-}
-.footer{
-    background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;    
-}
-.fa-credit-card{
-    color: blue;
-    width: 20px;
-}
-.fa-gift{
-    color: blue;
-    width: 20px;
-}
-.fa-lock{
-    color: blue;
-    width: 20px;
-}
-.pie{
-    background-color: white;
-    margin-top: 5px;
-    font-size: 12px;
-}
-hr{
-    border: none;
-    background-color: white;
-    height: 2vh;
-}
-/*Perfil de usuario e intereses*/
-.container-profile{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 10px;
-    margin: 25px;
-}
-.profile{
-    width: 30%;
-}
-.container-interest{
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
-    margin: 25px;
 }
 }
