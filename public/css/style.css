@@ -355,27 +355,26 @@ ul{
         width: 40%;
     }
     .search-container{
+        display: flex;
+        flex-wrap: wrap;
         background-color: white;
         width: 100%;
     }
     .search{
-        width: 90%;
+        width: 95%;
         font-size: 20px;
-        border: none;
         align-self: center;
-        background-color: white;
-        border: none;
     }
     .fa-search{
-        width: 10%;
+        width: 5%;
         font-size: 20px;
         align-self: center;
     }
     .title{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        font-size: 7px;
+        justify-content: center;
+        font-size:6px;
         width: 30%;
         align-self: center;
     }
@@ -410,8 +409,10 @@ ul{
 li{
     font-size: 1em;
     margin: 10px;
-    margin-top: 10px;
-    margin-bottom: 10%;
+}
+a:link  {
+    text-decoration: none;
+    color: black;
 }
 .offers-container{
     display: flex;
@@ -425,7 +426,7 @@ li{
     width: 23%;
 }
 .offers img{
-    height: 45vh;
+    height: 40vh;
     width: 100%;
     }
     
