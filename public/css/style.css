@@ -288,10 +288,6 @@ hr{
 ul{
     list-style: none;
 }
-.blue-btn{
-    display: flex;
-    justify-content: center;
-    }
 .fa-bars{
     color: white;
     font-size: 20px;
@@ -353,7 +349,7 @@ ul{
         display: flex;
     }
     .container-logo-search{
-        width: 90%;
+        width: 100%;
     }
     .logo{
         width: 40%;
@@ -366,7 +362,6 @@ ul{
     .search{
         width: 95%;
         font-size: 20px;
-        align-self: center;
         outline: none;
     }
     .fa-search{
@@ -386,27 +381,21 @@ ul{
         font-size: 10px;
 }
 .blue-btn{
-    display: flex;
-    justify-content: center;
-    margin: 25px;
     display: none;
 }
 .navegacion{
     display: flex;
-    flex-direction: row;
     background-color: #FFE600;
     padding: 10PX;
 }
 
 .ul1{
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     width: 50%;
 }
 .ul2{
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     width: 50%;
 }
@@ -429,12 +418,10 @@ a:link  {
     width: 23%;
 }
 .offers img{
-    height: 40vh;
     width: 100%;
     }
     
 .price{
-    display: flex;
     border-top: #ebebeb 2px solid;
 }
 .real-price{
